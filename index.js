@@ -14,10 +14,10 @@ let cards =[
 let cardCount = 100;
 
 
-const updateUserArrayById = (id, user) => {
-    const index = users.findIndex(u => u.id === id);
+const updateCardsArrayById = (id, card) => {
+    const index = cards.findIndex(c => c.id === id);
     if (index !== -1) {
-        users[index] = user;
+        cards[index] = card;
         return true;
     }
     return false;
